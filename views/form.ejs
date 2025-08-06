@@ -1,0 +1,17 @@
+<!-- Title of the form page -->
+<h1>New Message</h1>
+
+<!-- Form that sends POST request to /new route -->
+<form method="POST" action="/new">
+  
+  <!-- Input for user name -->
+  <input type="text" name="messageUser" placeholder="Your name" required />
+  <br />
+
+  <!-- Text area for message content -->
+  <textarea name="messageText" placeholder="Your message" required></textarea>
+  <br />
+
+  <!-- Submit button -->
+  <button type="submit">Submit</button>
+</form>

@@ -1,0 +1,18 @@
+<!-- Show the title -->
+<h1><%= title %></h1>
+
+<!-- Link to the /new form page -->
+<a href="/new">New Message</a>
+
+<!-- List all messages -->
+<ul>
+  <% messages.forEach(msg => { %>
+    <li>
+      <!-- Show the user name and message text -->
+      <strong><%= msg.user %></strong>: <%= msg.text %>
+      <br>
+      <!-- Show formatted date of when message was added -->
+      <em><%= msg.added.toLocaleString() %></em>
+    </li>
+  <% }) %>
+</ul>
